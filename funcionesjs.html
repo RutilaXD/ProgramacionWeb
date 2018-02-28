@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Html con funciones basicas javascript</title>
+	<script type="text/javascript">
+		function miFuncion() {
+			var x = document.getElementsByClassName('ciudad');
+			for (var i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+		}
+	</script>
+</head>
+<body>
+	<h2 class="ciudad">Londres</h2>
+	<p class="mensaje">Londres es la capital de Inglaterra</p>
+	<h2 class="ciudad">París</h2>
+	<p class="mensaje">París es la capital de Francia</p>
+	<h2 class="ciudad">Tokio</h2>
+	<p class="mensaje">Tokio es la capital de Japón</p>
+	<p>Da click para ocultar las lineas</p>
+	<button onclick="miFuncion()">Ocultar...</button>
+</body>
+</html>

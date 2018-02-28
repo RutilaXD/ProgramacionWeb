@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tablas</title>
+	<style type="text/css">
+		/*estilos para la tabla*/
+		table {
+			width: 100%;
+			/*margin: auto;*/
+			font-family: arial, sans-serif;
+			border-collapse: collapse;
+		}
+
+		table,th,td {
+			border: 1px solid black;
+			/*border-collapse: collapse;*/
+		}
+
+		td,th {
+			border: 1px solid #dddddd;
+			text-align: left;
+			padding: 8px;
+		}
+
+		th {
+			padding: 15px;
+		}
+
+		/*Estilos para las listas: disc, circle, square, none*/
+		ul {
+			list-style-type: circle;
+		}
+
+		/*para probar las clases*/
+		.ciudad {
+			background-color: tomato;
+			color: white;
+			padding: 10px;
+		}
+
+		.mensaje {
+			background-color: black;
+			color: white;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<!-- tablas -->
+	<table>
+		<tr>
+			<th>Nombre</th>
+			<th>Apellido</th>
+			<th>Edad</th>
+		</tr>
+		<tr>
+			<th>Juan</th>
+			<th>Perez</th>
+			<th>57</th>
+		</tr>
+		<tr>
+			<th>María</th>
+			<th>Salgado</th>
+			<th>62</th>
+		</tr>
+	</table>
+	<br/>
+	<!-- listas -->
+	<ul>
+		<li>Cafe</li>
+		<li>Te</li>
+		<li>Leche</li>
+	</ul>
+	<!-- Tipos de numeracion, 1, A, a, I, i -->
+	<ol type="i">
+		<li>Cafe</li>
+		<li>Te</li>
+		<li>Leche</li>		
+	</ol>
+	<!-- listas anidadas -->
+	<ul>
+		<li>Cafe</li>
+		<li>Te</li>
+		<ol>
+			<li>Te negro</li>
+			<li>Te de manzanilla/li>
+		</ol>
+		<li>Leche</li>
+	</ul>
+	<br/>
+	<!-- etiquetas con clase -->
+	<h2 class="ciudad">Londres</h2>
+	<p class="mensaje">Londres es la capital de Inglaterra</p>
+	<h2 class="ciudad">París</h2>
+	<p class="mensaje">París es la capital de Francia</p>
+	<h2 class="ciudad">Tokio</h2>
+	<p class="mensaje">Tokio es la capital de Japón</p>
+</body>
+</html>
