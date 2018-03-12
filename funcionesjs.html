@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Html con funciones basicas javascript</title>
+	<style type="text/css">
+		body {
+			text-align: center;
+			width: 100%;
+			height: 100%;
+			font-family: Arial, cursive;
+		}
+		.ciudad {
+			background-color: tomato;
+			color: white;
+			padding: 10px;
+		}
+
+		.ciudad,.mensaje {
+			width: 80%;
+			margin: auto;
+		}
+
+		.mensaje {
+			background-color: black;
+			color: white;
+			padding: 10px;
+		}
+
+		#btn {
+			width: 8%;
+			height: 35px;
+			background-color: #0f4e0a;
+			font-family: Arial, cursive;
+			color: white;
+			border-style: none;
+			border-radius: 3px;
+		}
+
+		#btn:hover {
+			background-color: #aa1717;
+			font-weight: bolder;
+		}		
+	</style>
+	<script type="text/javascript">
+		function miFuncion() {
+			var x = document.getElementsByClassName('ciudad');
+			 btn = document.getElementById('btn');
+			var btnTxt = btn.innerText;
+
+			if (btnTxt==="Ocultar...") {
+				for (var i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				btn.innerText = "Mostrar...";
+			} else {
+				for (var i = 0; i < x.length; i++) {
+					x[i].style.display = "block";
+				}
+				btn.innerText = "Ocultar...";				
+			}
+		}
+	</script>
+</head>
+<body>
+	<h2 class="ciudad">Londres</h2>
+	<p class="mensaje">Londres es la capital de Inglaterra</p>
+	<h2 class="ciudad">París</h2>
+	<p class="mensaje">París es la capital de Francia</p>
+	<h2 class="ciudad">Tokio</h2>
+	<p class="mensaje">Tokio es la capital de Japón</p>
+	<strong><p>Da click para ocultar las lineas</p></strong>
+	<button id="btn" onclick="miFuncion()" title="tócame mmm...">Ocultar...</button>
+</body>
+</html>
